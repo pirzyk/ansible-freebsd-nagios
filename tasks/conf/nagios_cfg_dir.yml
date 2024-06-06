@@ -43,7 +43,7 @@
   ansible.builtin.find:
     paths: "{{ bsd_nagios_objects_dir }}"
     patterns: "*.{{ bsd_nagios_objects_dir_extension }}"
-  delegate_to: localhost
+  #delegate_to: localhost
   register: result
 
 - name: "conf:cfg_dir: List files in {{ bsd_nagios_objects_dir }}"
