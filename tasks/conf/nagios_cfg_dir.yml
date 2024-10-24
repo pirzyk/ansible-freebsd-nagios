@@ -39,7 +39,7 @@
   block:
 
     - name: "Conf:cfg_dir: Find files in {{ bsd_nagios_objects_dir }}"
-      delegate_to: localhost
+      #delegate_to: localhost
       register: result
       ansible.builtin.find:
         paths: "{{ bsd_nagios_objects_dir }}"
